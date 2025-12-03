@@ -28,3 +28,7 @@ export const findAllMovies = async(): Promise<movie[]> =>{
 export const findMovieById = async(id: number): Promise<movie | undefined> =>{
     return database.find( movie => movie.id == id )
 }
+
+export const insertMovie = async(movie: movie) => {
+    database.push(movie)
+}

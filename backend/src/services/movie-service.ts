@@ -1,4 +1,5 @@
-import { findAllMovies, findMovieById } from "../repositories/movie-repository"
+import { movie } from "../models/movie-model"
+import { findAllMovies, findMovieById, insertMovie } from "../repositories/movie-repository"
 
 export const getMoviesService = async() =>{
     const data = await findAllMovies()
@@ -66,3 +67,12 @@ export const searchMoviesService = async(filters: {
         body: results
     };
 };
+
+export const createMovieService = async(movie: movie) =>{
+    if(Object.keys(movie).length !== 0){
+        await insertMovie(movie);
+        return {statusCode:200,body:{msg:"Criado!"}};
+    }else{
+        return {statusCode:400,body:{msg:"badrequest"}};
+    }
+}
