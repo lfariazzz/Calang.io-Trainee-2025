@@ -10,15 +10,15 @@ const database : movie[]=[
     },
     {
         id: 2,
-        nome: "Interestelar",
+        nome: "Interest",
         categorias: ["ficcao","romance"],
         ano: "2007"
     },
     {
         id: 3,
-        nome: "Interestelar",
+        nome: "interestelar",
         categorias: ["ficcao","romance"],
-        ano: "2007"
+        ano: "2008"
     }
 ]
 export const findAllMovies = async(): Promise<movie[]> =>{

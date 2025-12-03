@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getMoviesService, getMoviesByIdService } from "../services/movie-service" 
+import { getMoviesService, getMoviesByIdService, searchMoviesService } from "../services/movie-service" 
 
 export const getMovies = async(req: Request, res: Response) =>{
     const  httpResponse = await getMoviesService()
@@ -15,7 +15,16 @@ export const getMoviesById = async(req: Request, res: Response) =>{
 }
 
 export const searchMovies = async(req: Request, res: Response) =>{
-    
+    const { nome, categoria, ano } = req.query;
+
+    const filters = {
+      nome: nome as string,
+      categoria: categoria as string,
+      ano: ano as string,
+    };
+
+    const httpResponse = await searchMoviesService(filters);
+    res.status(httpResponse.statusCode).json(httpResponse.body);
 }
 
 export const postMovie = async(req: Request, res: Response) =>{
