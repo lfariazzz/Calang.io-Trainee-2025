@@ -1,8 +1,10 @@
 import { Request, Response } from "express";
-
+import { getMoviesService } from "../services/movie-service" 
 
 export const getMovies = async(req: Request, res: Response) =>{
-    
+    const  httpResponse = await getMoviesService()
+
+    res.status(httpResponse.statusCode).json(httpResponse.body);
 }
 
 export const getMoviesById = async(req: Request, res: Response) =>{
