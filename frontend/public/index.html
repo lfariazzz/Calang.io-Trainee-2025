@@ -1,109 +1,118 @@
-<!--Estrutura HTML ForgeFlix-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="../src/css/forgeflix.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ForgeFlix</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="../src/css/forgeflix.css" />
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    <!--NavBar-->
+
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">🔥 FORGEFLIX</div>
+
         <nav>
             <a href="#">Início</a>
             <a href="#">Catálogo</a>
             <a href="#">Minha Coleção</a>
             <a href="#">Sobre</a>
         </nav>
+
         <div class="actions">
             <button class="theme-toggle">🌙</button>
             <div class="profile"></div>
         </div>
     </header>
 
-    <!--Seção Hero-->
+    <!-- HERO -->
     <section class="hero">
         <h1>FORJANDO SUA EXPERIÊNCIA CINEMATOGRÁFICA</h1>
         <p>Descubra milhares de filmes em uma plataforma feita para cinéfilos</p>
+
         <div class="hero-buttons">
             <button class="primary">EXPLORAR CATÁLOGO</button>
             <button class="secondary">COMO FUNCIONA</button>
         </div>
+
+        <img src="../src/images/curve.svg" alt="" class="hero-curve" />
     </section>
 
-    <!--Seção em alta-->
+    <!-- EM ALTA -->
     <section class="trending">
-    <h2>🔥 EM ALTA NA FORJA</h2>
+        <h2>🔥 EM ALTA NA FORJA</h2>
 
-    <div class="cards-container">
+        <div class="cards-container">
 
-    <div class="card">
-        <span class="rating">⭐ 8.8</span>
-        <img src="../src/images/card1.jpg" alt="Homem-Aranha">
-        <h3 class="title">Homem-Aranha</h3>
-        <p class="meta">2010 • Ação / Ficção Científica</p>
-    </div>
-
-    <div class="card">
-        <span class="rating">⭐ 8.6</span>
-        <img src="../src/images/card2.jpg" alt="Coringa">
-        <h3 class="title">Coringa</h3>
-        <p class="meta">2014 • Ficção Científica / Drama</p>
-    </div>
-
-    <div class="card">
-        <span class="rating">⭐ 8.0</span>
-        <img src="../src/images/card3.jpg" alt="Transformers">
-        <h3 class="title">Transformers</h3>
-        <p class="meta">2017 • Ficção Científica / Ação</p>
-    </div>
-
-    <div class="card">
-        <span class="rating">⭐ 7.8</span>
-        <img src="../src/images/card4.jpg" alt="Pânico V">
-        <h3 class="title">Pânico V</h3>
-        <p class="meta">2017 • Terror</p>
-    </div>
-
-</div>
-
-</section>
-
-
-    <!--Seção contato-->
-    <section class="contact">
-        <h2>FALE COM OS FORJADORES</h2>
-        <p>Problemas técnicos, sugestões ou parcerias? Estamos aqui para ajudar.</p>
-
-        <form class="contact-form">
-            <div class="emails">
-                <div>
-                    <h3>LEVI FARIAS</h3>
-                    <p>levi.farias@aluno.ufca.edu.br</p>
-                </div>
-                <div>
-                    <h3>FRANCISCO VITOR</h3>
-                    <p>francisco.vitor@aluno.ufca.edu.br</p>
-                </div>
+            <div class="card">
+                <span class="rating">⭐ 8.8</span>
+                <img src="../src/images/card1.jpg" alt="Homem-Aranha">
+                <h3 class="title">Homem-Aranha</h3>
+                <p class="meta">2010 • Ação / Ficção Científica</p>
             </div>
 
-            <div class="divider">OU</div>
+            <div class="card">
+                <span class="rating">⭐ 8.6</span>
+                <img src="../src/images/card2.jpg" alt="Coringa">
+                <h3 class="title">Coringa</h3>
+                <p class="meta">2014 • Ficção Científica / Drama</p>
+            </div>
 
-            <input type="text" placeholder="Digite seu nome" />
-            <input type="email" placeholder="Digite seu e-mail" />
-            <textarea placeholder="Digite sua mensagem..."></textarea>
+            <div class="card">
+                <span class="rating">⭐ 8.0</span>
+                <img src="../src/images/card3.jpg" alt="Transformers">
+                <h3 class="title">Transformers</h3>
+                <p class="meta">2017 • Ficção Científica / Ação</p>
+            </div>
 
-            <button class="primary submit">ENVIAR MENSAGEM</button>
-        </form>
+            <div class="card">
+                <span class="rating">⭐ 7.8</span>
+                <img src="../src/images/card4.jpg" alt="Pânico V">
+                <h3 class="title">Pânico V</h3>
+                <p class="meta">2017 • Guerra / Drama</p>
+            </div>
+
+        </div>
     </section>
 
-    <!--Footer-->
+    <!-- CONTATO -->
+    <section class="contact">
+    <h2>FALE COM OS FORJADORES</h2>
+    <p>Problemas técnicos, sugestões ou parcerias? Estamos aqui para ajudar.</p>
+
+    <form class="contact-form">
+
+        <h3>ENVIE-NOS UM E-MAIL</h3>
+
+        <div class="emails">
+            <div>
+                <h3>LEVI FARIAS</h3>
+                <p>levi.farias@aluno.ufca.edu.br</p>
+            </div>
+            <div>
+                <h3>FRANCISCO VITOR</h3>
+                <p>francisco.vitor@aluno.ufca.edu.br</p>
+            </div>
+        </div>
+
+        <div class="divider">OU</div>
+
+        <input type="text" placeholder="Digite seu nome" />
+        <input type="email" placeholder="Digite seu e-mail" />
+        <textarea placeholder="Digite sua mensagem..."></textarea>
+
+        <button class="submit">📩 ENVIAR MENSAGEM</button>
+
+    </form>
+</section>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <p>© 2025 ForgeFlix. Todos os direitos forjados.</p>
     </footer>
+
 </body>
 </html>
