@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getMoviesService, getMoviesByIdService, searchMoviesService, createMovieService, deleteMoviesService } from "../services/movie-service" 
+import { getMoviesService, getMoviesByIdService, searchMoviesService, createMovieService, deleteMoviesService, updateMovieService } from "../services/movie-service" 
 
 export const getMovies = async(req: Request, res: Response) =>{
     const  httpResponse = await getMoviesService()
@@ -43,6 +43,10 @@ export const deleteMovie = async(req: Request, res: Response) =>{
 }
 
 export const patchMovie = async(req: Request, res: Response) =>{
-    
+    const id = parseInt(req.params.id)
+    const bodyValue = req.body
+
+    const httpResponse = await updateMovieService(id, bodyValue)
+    res.status(httpResponse.statusCode).json(httpResponse.body);
 }
 

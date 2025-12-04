@@ -1,5 +1,5 @@
 import { movie } from "../models/movie-model"
-import { findAllMovies, findMovieById, insertMovie, deleteMovieById } from "../repositories/movie-repository"
+import { findAllMovies, findMovieById, insertMovie, deleteMovieById, findAndUpdateMovie } from "../repositories/movie-repository"
 
 export const getMoviesService = async() =>{
     const data = await findAllMovies()
@@ -93,4 +93,13 @@ export const deleteMoviesService = async(id: number) =>{
         }
     }
     return response
+}
+
+export const updateMovieService = async(id: number, movieNew: movie) =>{
+    const data = await findAndUpdateMovie(id, movieNew)
+
+    return {
+        statusCode: 200,
+        body: data
+    }
 }

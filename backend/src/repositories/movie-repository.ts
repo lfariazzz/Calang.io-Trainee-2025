@@ -41,3 +41,16 @@ export const deleteMovieById = async(id: number): Promise<boolean> => {
     }
     return false
 }
+
+export const findAndUpdateMovie = async(id: number, movieNew: movie) => {
+    const index = database.findIndex((movie) => movie.id === id);
+
+    if (index === -1) return null;
+
+    database[index] = {
+        ...database[index],
+        ...movieNew
+    };
+
+    return database[index];
+}
