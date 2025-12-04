@@ -1,5 +1,23 @@
 import { contact } from "../models/contact-model"
-import { insertContact } from "../repositories/contact-repository"
+import { insertContact, findAllContacts } from "../repositories/contact-repository"
+
+export const getContactService = async() => {
+    const data = await findAllContacts()
+    let response = null
+
+    if(data){
+        response = {
+            statusCode: 200,
+            body: data
+        }
+    }else{
+        response = {
+            statusCode: 202,
+            body: null,
+        }
+    }
+    return response
+}
 
 export const createContactService = async(contact: contact) => {
     if(Object.keys(contact).length !== 0){
@@ -10,3 +28,4 @@ export const createContactService = async(contact: contact) => {
     }
     
 }
+

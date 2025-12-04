@@ -1,5 +1,11 @@
 import { Request, Response } from "express";
-import { createContactService } from "../services/contact-service"
+import { createContactService, getContactService } from "../services/contact-service"
+
+export const getContacts = async(req: Request, res: Response) =>{
+    const httpResponse = await getContactService()
+
+    res.status(httpResponse.statusCode).json(httpResponse.body)
+}
 
 export const postContact = async(req: Request, res: Response) =>{
     const bodyValue = req.body
