@@ -1,6 +1,5 @@
-/* ForgeFlix CSS Base Structure */
+/* Estilização ForgeFlix */
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* NavBar */
 .navbar {
   width: 100%;
   padding: 20px 60px;
@@ -60,7 +59,7 @@ body {
   border-radius: 50%;
 }
 
-/* HERO */
+/* Seção hero */
 .hero {
   padding-top: 180px;
   text-align: center;
@@ -123,7 +122,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* CONTACT */
+/* Contato */
 .contact {
   padding: 60px;
   text-align: center;
@@ -167,29 +166,98 @@ body {
   background: #0c0c0c;
   color: #888;
 }
-/* ----- CARDS EM ALTA ----- */
+/* ----- Cards em alta ----- */
 .card {
-  background: #141414;
-  border-radius: 12px;
-  width: 180px;
-  padding: 10px;
+  background: #151515;
+  border-radius: 16px;
+  width: 200px;
+  padding: 12px;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.3s ease;
   cursor: pointer;
+  box-shadow: 0 8px 20px #00000040;
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
 }
 
 .card h3 {
-  margin-top: 10px;
-  font-size: 1rem;
+  margin-top: 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
   color: #fff;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 26px #00000070;
   background: #1c1c1c;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Estrutura do Card */
+.card {
+    position: relative;
+    background: #111;
+    width: 220px;
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem padronizada */
+.card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Nota no topo direita */
+.card .rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #222;
+    padding: 5px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    color: #ffd700;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+
+/* Título do filme */
+.card .title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Ano e gênero */
+.card .meta {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.3;
 }
