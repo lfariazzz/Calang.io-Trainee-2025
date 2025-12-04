@@ -1,5 +1,5 @@
 import { movie } from "../models/movie-model"
-import { findAllMovies, findMovieById, insertMovie } from "../repositories/movie-repository"
+import { findAllMovies, findMovieById, insertMovie, deleteMovieById } from "../repositories/movie-repository"
 
 export const getMoviesService = async() =>{
     const data = await findAllMovies()
@@ -75,4 +75,22 @@ export const createMovieService = async(movie: movie) =>{
     }else{
         return {statusCode:400,body:{msg:"badrequest"}};
     }
+}
+
+export const deleteMoviesService = async(id: number) =>{
+    const isDelete = await deleteMovieById(id)
+    let response = null
+
+    if(isDelete){
+        response = {
+            statusCode: 200,
+            body: {msg:"Deleted"}
+        }
+    }else{
+        response = {
+            statusCode: 400,
+            body: null,
+        }
+    }
+    return response
 }

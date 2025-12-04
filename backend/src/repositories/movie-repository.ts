@@ -32,3 +32,12 @@ export const findMovieById = async(id: number): Promise<movie | undefined> =>{
 export const insertMovie = async(movie: movie) => {
     database.push(movie)
 }
+
+export const deleteMovieById = async(id: number): Promise<boolean> => {
+    const index = database.findIndex((movie) => movie.id == id)
+    if(index !==-1){
+        database.splice(index, 1)
+        return true
+    }
+    return false
+}
