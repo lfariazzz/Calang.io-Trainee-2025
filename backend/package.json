@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/lodash": "^4.17.21",
     "@types/node": "^20.11.30",
     "tsup": "^8.0.2",
     "tsx": "^4.7.1",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "lowdb": "^7.0.1"
   }
 }
