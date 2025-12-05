@@ -1,5 +1,11 @@
 import "./../styles/forgeflix.css";
 import imageCurve from "./../assets/images/curve.svg";
+import {Card} from "./Card"
+
+import image1 from "./../assets/images/card1.png";
+import image2 from "./../assets/images/card2.png";
+import image3 from "./../assets/images/card3.png";
+import image4 from "./../assets/images/card4.png";
 
 export default function Trending() {
   const imageCurveUrl = imageCurve;
@@ -10,34 +16,33 @@ export default function Trending() {
       <img src={imageCurveUrl} className="trending-curve" />
 
       <div className="cards-container">
+        <Card
+            rating="8.8"
+            image={image1}
+            title="HOMEM ARANHA"
+            year="2010 • AÇÃO / FICÇÃO CIENTÍFICA"
+        />
 
-        <div className="card">
-          <span className="rating">⭐ 8.8</span>
-          <img src="/src/images/card1.png" alt="HOMEM ARANHA" />
-          <h3 className="title">HOMEM ARANHA</h3>
-          <p className="meta">2010 • AÇÃO / FICÇÃO CIENTÍFICA</p>
-        </div>
+        <Card
+            rating="8.6"
+            image={image2}
+            title="CORINGA"
+            year="2014 • FICÇÃO CIENTÍFICA / DRAMA"
+        />
 
-        <div className="card">
-          <span className="rating">⭐ 8.6</span>
-          <img src="/src/images/card2.png" alt="CORINGA" />
-          <h3 className="title">CORINGA</h3>
-          <p className="meta">2014 • FICÇÃO CIENTÍFICA / DRAMA</p>
-        </div>
+        <Card
+            rating="8.0"
+            image={image3}
+            title="TRANSFORMERS"
+            year="2017 • FICÇÃO CIENTÍFICA / AÇÃO"
+        />
 
-        <div className="card">
-          <span className="rating">⭐ 8.0</span>
-          <img src="/src/images/card3.png" alt="TRANSFORMERS" />
-          <h3 className="title">TRANSFORMERS</h3>
-          <p className="meta">2017 • FICÇÃO CIENTÍFICA / AÇÃO</p>
-        </div>
-
-        <div className="card">
-          <span className="rating">⭐ 7.8</span>
-          <img src="/src/images/card4.png" alt="PÂNICO V" />
-          <h3 className="title">PÂNICO V</h3>
-          <p className="meta">2017 • TERROR / SUSPENSE</p>
-        </div>
+        <Card
+            rating="7.8"
+            image={image4}
+            title="PÂNICO V"
+            year="2017 • TERROR / SUSPENSE"
+        />
 
       </div>
     </section>
