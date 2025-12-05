@@ -1,97 +1,179 @@
-<!--Estrutura HTML ForgeFlix-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="../src/css/forgeflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ForgeFlix</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="../src/css/forgeflix.css" />
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    <!--NavBar-->
+
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="logo">🔥 FORGEFLIX</div>
+
         <nav>
             <a href="#">Início</a>
             <a href="#">Catálogo</a>
             <a href="#">Minha Coleção</a>
             <a href="#">Sobre</a>
         </nav>
+
         <div class="actions">
-            <button class="theme-toggle">🌙</button>
-            <div class="profile"></div>
+            <button class="search">🔍</button>
+            <button class="theme">🌙</button>
+            <button class="profile">👤</button>
         </div>
     </header>
 
-    <!--Seção Hero-->
+    <!-- HERO -->
     <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
         <h1>FORJANDO SUA EXPERIÊNCIA CINEMATOGRÁFICA</h1>
         <p>Descubra milhares de filmes em uma plataforma feita para cinéfilos</p>
+
         <div class="hero-buttons">
             <button class="primary">EXPLORAR CATÁLOGO</button>
             <button class="secondary">COMO FUNCIONA</button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--Seção em alta-->
+
+    <!-- EM ALTA -->
     <section class="trending">
         <h2>🔥 EM ALTA NA FORJA</h2>
-        <div class="cards">
+
+        <img src="../src/images/curve.svg" class="trending-curve" alt="" />
+
+        <div class="cards-container">
+            
             <div class="card">
-    <img src="https://via.placeholder.com/180x260" alt="Filme 1">
-    <h3>Título do Filme</h3>
-</div>
+                <span class="rating">⭐ 8.8</span>
+                <img src="../src/images/card1.png" alt="HOMEM ARANHA">
+                <h3 class="title">HOMEM ARANHA</h3>
+                <p class="meta">2010 • AÇÃO / FICÇÃO CIENTÍFICA</p>
+            </div>
 
-<div class="card">
-    <img src="https://via.placeholder.com/180x260" alt="Filme 2">
-    <h3>Título do Filme</h3>
-</div>
+            <div class="card">
+                <span class="rating">⭐ 8.6</span>
+                <img src="../src/images/card2.png" alt="CORINGA">
+                <h3 class="title">CORINGA</h3>
+                <p class="meta">2014 • FICÇÃO CIENTÍFICA / DRAMA</p>
+            </div>
 
-<div class="card">
-    <img src="https://via.placeholder.com/180x260" alt="Filme 3">
-    <h3>Título do Filme</h3>
-</div>
+            <div class="card">
+                <span class="rating">⭐ 8.0</span>
+                <img src="../src/images/card3.png" alt="TRANSFORMERS">
+                <h3 class="title">TRANSFORMERS</h3>
+                <p class="meta">2017 • FICÇÃO CIENTÍFICA / AÇÃO</p>
+            </div>
 
-<div class="card">
-    <img src="https://via.placeholder.com/180x260" alt="Filme 4">
-    <h3>Título do Filme</h3>
-</div>
+            <div class="card">
+                <span class="rating">⭐ 7.8</span>
+                <img src="../src/images/card4.png" alt="PÂNICO V">
+                <h3 class="title">PÂNICO V</h3>
+                <p class="meta">2017 • TERROR / SUSPENSE</p>
+            </div>
+            
+
+        
 
         </div>
     </section>
 
-    <!--Seção contato-->
+    <!-- CONTATO -->
     <section class="contact">
-        <h2>FALE COM OS FORJADORES</h2>
-        <p>Problemas técnicos, sugestões ou parcerias? Estamos aqui para ajudar.</p>
+    <h2>FALE COM OS FORJADORES</h2>
+    <p>Problemas técnicos, sugestões ou parcerias? Estamos aqui para ajudar.</p>
 
-        <form class="contact-form">
-            <div class="emails">
-                <div>
-                    <h3>LEVI FARIAS</h3>
-                    <p>levi.farias@aluno.ufca.edu.br</p>
-                </div>
-                <div>
-                    <h3>FRANCISCO VITOR</h3>
-                    <p>francisco.vitor@aluno.ufca.edu.br</p>
-                </div>
+    <form class="contact-form">
+
+        <h3>ENVIE-NOS UM E-MAIL</h3>
+
+        <div class="emails">
+            <div>
+                <h3>LEVI FARIAS</h3>
+                <p>levi.farias@aluno.ufca.edu.br</p>
             </div>
+            <div>
+                <h3>FRANCISCO VITOR</h3>
+                <p>francisco.vitor@aluno.ufca.edu.br</p>
+            </div>
+        </div>
 
-            <div class="divider">OU</div>
+        <div class="divider">OU</div>
 
-            <input type="text" placeholder="Digite seu nome" />
-            <input type="email" placeholder="Digite seu e-mail" />
-            <textarea placeholder="Digite sua mensagem..."></textarea>
+        <input type="text" placeholder="Digite seu nome" />
+        <input type="email" placeholder="Digite seu e-mail" />
+        <textarea placeholder="Digite sua mensagem..."></textarea>
 
-            <button class="primary submit">ENVIAR MENSAGEM</button>
-        </form>
-    </section>
+        <button class="submit">📩 ENVIAR MENSAGEM</button>
 
-    <!--Footer-->
-    <footer class="footer">
+    </form>
+</section>
+
+    <!-- FOOTER ATUALIZADO -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="footer-logo">🔥 FORGEFLIX</div>
+            <p class="footer-tagline">Forjando experiências cinematográficas</p>
+        </div>
+        
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>NAVEGAÇÃO</h4>
+                <a href="#">Início</a>
+                <a href="#">Catálogo</a>
+                <a href="#">Minha Coleção</a>
+                <a href="#">Sobre</a>
+            </div>
+            
+            <div class="footer-column">
+                <h4>RECURSOS</h4>
+                <a href="#">Como funciona</a>
+                <a href="#">FAQ</a>
+                <a href="#">Aplicativo</a>
+                <a href="#">API</a>
+            </div>
+            
+            <div class="footer-column">
+                <h4>LEGAL</h4>
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">DMCA</a>
+            </div>
+        </div>
+        
+        <div class="footer-social">
+            <h4>CONECTE-SE</h4>
+            <div class="social-icons">
+    <a href="#" class="social-icon" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="#" class="social-icon" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="social-icon" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>
+    <a href="#" class="social-icon" aria-label="Discord">
+        <i class="fab fa-discord"></i>
+    </a>
+</div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
         <p>© 2025 ForgeFlix. Todos os direitos forjados.</p>
-    </footer>
-</body>
-</html>
+        <p class="footer-love">Feito com esforço por trainees💪</p>
+    </div>
+</footer>
