@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./../styles/forgeflix.css";
 
 export default function Navbar() {
@@ -6,10 +7,10 @@ export default function Navbar() {
       <div className="logo">🔥 FORGEFLIX</div>
 
       <nav>
-        <a href="#">Início</a>
-        <a href="/catalogo">Catálogo</a>
-        <a href="#">Minha Coleção</a>
-        <a href="#">Sobre</a>
+        <Link to="/">Início</Link>
+        <Link to="/catalogo">Catálogo</Link>
+        <Link to="/colecao">Minha Coleção</Link>
+        <Link to="/sobre">Sobre</Link>
       </nav>
 
       <div className="actions">
