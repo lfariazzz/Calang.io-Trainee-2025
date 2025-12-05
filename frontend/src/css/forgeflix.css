@@ -67,12 +67,53 @@ body {
 
 /* HERO */
 .hero {
-  padding-top: 180px;
-  padding-bottom: 120px;
-  text-align: center;
-  background: #0d0d0d;
-  position: relative;
+    padding-top: 180px;
+    padding-bottom: 140px;
+    text-align: center;
+    position: relative;
+    background-color: #0d0d0d;
 }
+
+/* Curva fica somando apenas no fundo da hero */
+.hero .hero-curve {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%; /* cria espaço lateral semelhante ao figma */
+    opacity: 0.18; /* transparência bem baixa */
+    pointer-events: none;
+    z-index: 1; /* fica atrás do conteúdo da hero */
+}
+
+
+/* container que segura a imagem ao fundo */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;        /* controla o espaço nas laterais — ajuste para 75% se quiser menor */
+    height: 100%;
+    background-image:
+        linear-gradient(to right, #000 0%, #000000cc 20%, #00000077 50%, #000000cc 80%, #000 100%),
+        url("../images/HeroBar.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;     /* transparência menor */
+    border-radius: 12px;
+    z-index: 1;
+}
+
+/* conteúdo fica acima da imagem */
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+}
+
+
+
 
 .hero h1 {
   font-size: 2.8rem;
@@ -121,20 +162,21 @@ body {
   background: #ff5c2334;
 }
 
-/* CURVA HERO */
-.hero-curve {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  display: block;
-}
-
 /* TRENDING */
 .trending {
-  padding: 80px 40px;
-  text-align: center;
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    background-color: #0d0d0d;
+    overflow: hidden; /* impede que passe da área */
 }
+
+/* Seus cards precisam estar acima da curva */
+.movie-cards {
+    position: relative;
+    z-index: 3;
+}
+
 
 .trending h2 {
   font-size: 1.9rem;
@@ -143,11 +185,13 @@ body {
 
 /* CARDS */
 .cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 26px;
-  margin-top: 10px;
-  flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 3; /* Acima da curva */
 }
 
 .card {
@@ -204,6 +248,40 @@ body {
   color: #cfcfcf;
 }
 
+/* A curva agora fica no fundo do trending, atrás dos cards */
+.trending .trending-curve {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 300px; /* Altura fixa para a onda */
+    opacity: 1;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
+    z-index: 1;
+    object-fit: cover; /* Cobre a largura sem distorcer altura */
+}
+
+.trending {
+    padding: 80px 40px 160px; /* Aumentei o padding-bottom para dar espaço */
+    text-align: center;
+    position: relative;
+    background-color: transparent; /* Tornamos o fundo transparente */
+    overflow: visible;
+    z-index: 2; /* Garante que os cards fiquem acima */
+}
+
+.trending::after {
+    content: '';
+    position: absolute;
+    top: calc(40% + 300px); /* Começa onde termina a onda */
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, white 0%, #ffffff 100%);
+    z-index: 1;
+}
 /* CONTATO */
 /* CONTATO (versão Figma-like) */
 .contact {
@@ -211,6 +289,8 @@ body {
     padding: 120px 20px;
     text-align: center;
     position: relative;
+    z-index: 2; /* Abaixo dos cards, acima do fundo */
+    margin-top: -100px; /* Puxa a seção para cima, sobrepondo à curva */
 }
 
 /* Título */
