@@ -28,6 +28,32 @@ export function Catalogo() {
               title="CORINGA"
               year="2014 • FICÇÃO CIENTÍFICA / DRAMA"
             />
+            <Card
+              rating="8.8"
+              image="/images/card1.png"
+              title="HOMEM ARANHA"
+              year="2010 • AÇÃO / FICÇÃO CIENTÍFICA"
+            />
+
+            <Card
+              rating="8.6"
+              image="/images/card2.png"
+              title="CORINGA"
+              year="2014 • FICÇÃO CIENTÍFICA / DRAMA"
+            />
+            <Card
+              rating="8.8"
+              image="/images/card1.png"
+              title="HOMEM ARANHA"
+              year="2010 • AÇÃO / FICÇÃO CIENTÍFICA"
+            />
+
+            <Card
+              rating="8.6"
+              image="/images/card2.png"
+              title="CORINGA"
+              year="2014 • FICÇÃO CIENTÍFICA / DRAMA"
+            />                        
           </div>
         </section>
       </main>
