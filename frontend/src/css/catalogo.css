@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 25px 60px;
+    background: #0d0d0d;
+    border-bottom: 1px solid #232323;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    padding: 30px 40px;
+    gap: 40px;
+}
+
+/* Filter sidebar */
+#filter-section {
+    width: 280px;
+}
+
+.filter-container {
+    background: #141414;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.title {
+    color: #ff7a2f;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Busca */
+.search-name input {
+    width: 100%;
+    background: #1a1a1a;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+    outline: none;
+    color: #fff;
+}
+
+.filter-title {
+    font-size: 15px;
+    color: #e4e4e4;
+    margin: 15px 0 10px;
+}
+
+/* Categorias */
+.filter-category div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 4px 0;
+}
+
+.filter-category input {
+    accent-color: #ff7a2f;
+}
+
+.filter-category label {
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+/* Ano */
+.date-filter span {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.date-filter input {
+    width: 80px;
+    padding: 8px;
+    background: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    margin: 0 0px 10px 0;
+}
+
