@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* Layout principal */
+main {
+  margin-top: 80px; /* espaço para a navbar */
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+/* Sidebar */
+#filter-section {
+  width: 280px;
+  flex-shrink: 0; 
+}
+
+.filter-container {
+  background: #141414;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+.title {
+  color: #ff7a2f;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* busca por nome */
+.search-name input {
+  width: 100%;
+  background: #1a1a1a;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 5px;
+  outline: none;
+  color: #fff;
+}
+
+.filter-title {
+  font-size: 15px;
+  color: #e4e4e4;
+  margin: 15px 0 10px;
+}
+
+/* categorias */
+.filter-category div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.filter-category input {
+  accent-color: #ff7a2f;
+}
+
+.filter-category label {
+  color: #cfcfcf;
+  font-size: 14px;
+}
+
+/* ano */
+.date-filter span {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.date-filter input {
+  width: 90px;
+  padding: 8px;
+  background: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Cards */
+#cards {
+  flex: 1;
+}
+
+#cards h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+/* grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
