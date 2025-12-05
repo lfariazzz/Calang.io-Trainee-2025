@@ -1,10 +1,5 @@
+import Home from "./Pages/Home/Home";
 
-function App() {
-  return (
-    <>
-      <h3>front</h3>
-    </>
-  )
+export default function App() {
+  return <Home />;
 }
-
-export default App
