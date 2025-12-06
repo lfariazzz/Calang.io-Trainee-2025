@@ -197,9 +197,10 @@ npm run dev
 ---
 
 ## Implementações futuras
-- Páginas de Admin para criar e editar filmes e visualizar mensagens.
+- Páginas de Admin para criar e editar filmes e visualizar mensagens
+- Responsividade para tablet e mobile
 - Sistema de login
-- Implementar "Minha Coleção" para o usuário logado salvar filmes em sua coleção.
+- Implementar "Minha Coleção" para o usuário logado salvar filmes em sua coleção
 - Implementar página "Sobre"
 
 ---
