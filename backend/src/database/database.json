@@ -1,7 +1,1065 @@
 {
   "movies": [
     {
-      "nome": "Vingadores"
+      "id": 1,
+      "nome": "O Poderoso Chefão",
+      "ano": 1972,
+      "categorias": [
+        "Drama",
+        "Crime"
+      ],
+      "rating": 9.2,
+      "imagem": "https://image.tmdb.org/t/p/w500/3Tf8vXykYHzHrTt4m7Od3ciHmIq.jpg",
+      "sinopse": "Uma família mafiosa luta para estabelecer sua supremacia nos Estados Unidos depois da Segunda Guerra Mundial.",
+      "duracao": 175,
+      "diretor": "Francis Ford Coppola",
+      "elenco": [
+        "Marlon Brando",
+        "Al Pacino",
+        "James Caan",
+        "Robert Duvall",
+        "Diane Keaton"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Um Sonho de Liberdade",
+      "ano": 1994,
+      "categorias": [
+        "Drama"
+      ],
+      "rating": 9.3,
+      "imagem": "https://image.tmdb.org/t/p/w500/hBcY0fE9pfXzvVaY4GKarweriG2.jpg",
+      "sinopse": "Dois homens presos se reúnem ao longo de vários anos, encontrando consolo e eventual redenção através de atos de decência comum.",
+      "duracao": 142,
+      "diretor": "Frank Darabont",
+      "elenco": [
+        "Tim Robbins",
+        "Morgan Freeman",
+        "Bob Gunton",
+        "William Sadler",
+        "Clancy Brown"
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "O Cavaleiro das Trevas",
+      "ano": 2008,
+      "categorias": [
+        "Ação",
+        "Drama",
+        "Crime"
+      ],
+      "rating": 9,
+      "imagem": "https://image.tmdb.org/t/p/w500/iGp9v4kZKyDwm7F4E0q4jRqYc6E.jpg",
+      "sinopse": "Batman trava uma guerra contra o crime em Gotham City com a ajuda do tenente James Gordon e do promotor Harvey Dent.",
+      "duracao": 152,
+      "diretor": "Christopher Nolan",
+      "elenco": [
+        "Christian Bale",
+        "Heath Ledger",
+        "Aaron Eckhart",
+        "Michael Caine",
+        "Gary Oldman"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Pulp Fiction: Tempo de Violência",
+      "ano": 1994,
+      "categorias": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 8.9,
+      "imagem": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "sinopse": "As vidas de dois assassinos da máfia, um boxeador, um gângster e sua esposa se entrelaçam em quatro histórias de violência e redenção.",
+      "duracao": 154,
+      "diretor": "Quentin Tarantino",
+      "elenco": [
+        "John Travolta",
+        "Uma Thurman",
+        "Samuel L. Jackson",
+        "Bruce Willis",
+        "Ving Rhames"
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Forrest Gump: O Contador de Histórias",
+      "ano": 1994,
+      "categorias": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 8.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
+      "sinopse": "As presidências de Kennedy e Johnson, os eventos do Vietnã, Watergate e outros desenvolvimentos históricos são vistos pelos olhos de um homem do Alabama com QI abaixo da média.",
+      "duracao": 142,
+      "diretor": "Robert Zemeckis",
+      "elenco": [
+        "Tom Hanks",
+        "Robin Wright",
+        "Gary Sinise",
+        "Sally Field",
+        "Mykelti Williamson"
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Inception: A Origem",
+      "ano": 2010,
+      "categorias": [
+        "Ficção Científica",
+        "Ação",
+        "Suspense"
+      ],
+      "rating": 8.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "sinopse": "Um ladrão que rouba segredos corporativos através do uso da tecnologia de compartilhamento de sonhos recebe a tarefa inversa de plantar uma ideia na mente de um CEO.",
+      "duracao": 148,
+      "diretor": "Christopher Nolan",
+      "elenco": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page",
+        "Tom Hardy",
+        "Ken Watanabe"
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Matrix",
+      "ano": 1999,
+      "categorias": [
+        "Ficção Científica",
+        "Ação"
+      ],
+      "rating": 8.7,
+      "imagem": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "sinopse": "Um hacker descobre a verdade chocante sobre sua realidade e seu papel na guerra contra seus controladores.",
+      "duracao": 136,
+      "diretor": "Lana e Lilly Wachowski",
+      "elenco": [
+        "Keanu Reeves",
+        "Laurence Fishburne",
+        "Carrie-Anne Moss",
+        "Hugo Weaving",
+        "Joe Pantoliano"
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Interestelar",
+      "ano": 2014,
+      "categorias": [
+        "Ficção Científica",
+        "Drama",
+        "Aventura"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "sinopse": "Uma equipe de exploradores viaja através de um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.",
+      "duracao": 169,
+      "diretor": "Christopher Nolan",
+      "elenco": [
+        "Matthew McConaughey",
+        "Anne Hathaway",
+        "Jessica Chastain",
+        "Michael Caine",
+        "Matt Damon"
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Clube da Luta",
+      "ano": 1999,
+      "categorias": [
+        "Drama"
+      ],
+      "rating": 8.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+      "sinopse": "Um office worker insone e um fabricante de sabonetes formam um clube de luta underground que evolui para algo muito maior.",
+      "duracao": 139,
+      "diretor": "David Fincher",
+      "elenco": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter",
+        "Meat Loaf",
+        "Jared Leto"
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "A Lista de Schindler",
+      "ano": 1993,
+      "categorias": [
+        "Drama",
+        "Histórico"
+      ],
+      "rating": 8.9,
+      "imagem": "https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+      "sinopse": "Na Polônia ocupada pelos alemães durante a Segunda Guerra Mundial, o industrial Oskar Schindler gradualmente se preocupa com seus trabalhadores judeus após testemunhar sua perseguição.",
+      "duracao": 195,
+      "diretor": "Steven Spielberg",
+      "elenco": [
+        "Liam Neeson",
+        "Ben Kingsley",
+        "Ralph Fiennes",
+        "Caroline Goodall",
+        "Jonathan Sagall"
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Os Bons Companheiros",
+      "ano": 1990,
+      "categorias": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 8.7,
+      "imagem": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+      "sinopse": "A história de Henry Hill e sua vida na máfia, cobrindo sua relação com sua esposa Karen Hill e seus parceiros mafiosos.",
+      "duracao": 146,
+      "diretor": "Martin Scorsese",
+      "elenco": [
+        "Robert De Niro",
+        "Ray Liotta",
+        "Joe Pesci",
+        "Lorraine Bracco",
+        "Paul Sorvino"
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "O Senhor dos Anéis: A Sociedade do Anel",
+      "ano": 2001,
+      "categorias": [
+        "Aventura",
+        "Fantasia",
+        "Drama"
+      ],
+      "rating": 8.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+      "sinopse": "Um hobbit tímido da Terra-média e oito companheiros partem em uma jornada para destruir o Um Anel e salvar a Terra-média do Lorde das Trevas Sauron.",
+      "duracao": 178,
+      "diretor": "Peter Jackson",
+      "elenco": [
+        "Elijah Wood",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Sean Astin",
+        "Orlando Bloom"
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "Parasita",
+      "ano": 2019,
+      "categorias": [
+        "Comédia",
+        "Drama",
+        "Suspense"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "sinopse": "Uma família coreana desamparada planeja enriquecer instalando-se como empregados de uma família rica.",
+      "duracao": 132,
+      "diretor": "Bong Joon-ho",
+      "elenco": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong",
+        "Choi Woo-shik",
+        "Park So-dam"
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Cidade de Deus",
+      "ano": 2002,
+      "categorias": [
+        "Crime",
+        "Drama"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+      "sinopse": "Dois meninos crescem em uma favela do Rio de Janeiro e tomam caminhos diferentes na vida.",
+      "duracao": 130,
+      "diretor": "Fernando Meirelles e Kátia Lund",
+      "elenco": [
+        "Alexandre Rodrigues",
+        "Leandro Firmino",
+        "Phellipe Haagensen",
+        "Douglas Silva",
+        "Jonathan Haagensen"
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "Gladiador",
+      "ano": 2000,
+      "categorias": [
+        "Ação",
+        "Drama",
+        "Aventura"
+      ],
+      "rating": 8.5,
+      "imagem": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+      "sinopse": "Um ex-general romano busca vingança contra o imperador corrupto que assassinou sua família e o enviou para a escravidão.",
+      "duracao": 155,
+      "diretor": "Ridley Scott",
+      "elenco": [
+        "Russell Crowe",
+        "Joaquin Phoenix",
+        "Connie Nielsen",
+        "Oliver Reed",
+        "Richard Harris"
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "A Viagem de Chihiro",
+      "ano": 2001,
+      "categorias": [
+        "Animação",
+        "Fantasia",
+        "Aventura"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+      "sinopse": "Uma menina de 10 anos que se muda para um novo bairro entra em um mundo mágico governado por deuses, bruxas e espíritos.",
+      "duracao": 125,
+      "diretor": "Hayao Miyazaki",
+      "elenco": [
+        "Rumi Hiiragi (voz)",
+        "Miyu Irino (voz)",
+        "Mari Natsuki (voz)",
+        "Takashi Naito (voz)",
+        "Yasuko Sawaguchi (voz)"
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "O Silêncio dos Inocentes",
+      "ano": 1991,
+      "categorias": [
+        "Crime",
+        "Drama",
+        "Suspense"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+      "sinopse": "Uma jovem agente do FBI deve receber a ajuda de um assassino canibal preso para ajudar a capturar outro serial killer.",
+      "duracao": 118,
+      "diretor": "Jonathan Demme",
+      "elenco": [
+        "Jodie Foster",
+        "Anthony Hopkins",
+        "Scott Glenn",
+        "Ted Levine",
+        "Anthony Heald"
+      ]
+    },
+    {
+      "id": 18,
+      "nome": "Os Infiltrados",
+      "ano": 2006,
+      "categorias": [
+        "Crime",
+        "Drama",
+        "Suspense"
+      ],
+      "rating": 8.5,
+      "imagem": "https://image.tmdb.org/t/p/w500/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
+      "sinopse": "Um policial disfarçado e um espião da máfia tentam se identificar enquanto se infiltram no submundo do crime de Boston.",
+      "duracao": 151,
+      "diretor": "Martin Scorsese",
+      "elenco": [
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Jack Nicholson",
+        "Mark Wahlberg",
+        "Martin Sheen"
+      ]
+    },
+    {
+      "id": 19,
+      "nome": "A Vida é Bela",
+      "ano": 1997,
+      "categorias": [
+        "Comédia",
+        "Drama",
+        "Romance"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
+      "sinopse": "Quando um livreiro judeu e seu filho são levados para um campo de concentração, ele usa sua imaginação para proteger seu filho dos perigos ao seu redor.",
+      "duracao": 116,
+      "diretor": "Roberto Benigni",
+      "elenco": [
+        "Roberto Benigni",
+        "Nicoletta Braschi",
+        "Giorgio Cantarini",
+        "Giustino Durano",
+        "Sergio Bini Bustric"
+      ]
+    },
+    {
+      "id": 20,
+      "nome": "O Iluminado",
+      "ano": 1980,
+      "categorias": [
+        "Terror",
+        "Drama"
+      ],
+      "rating": 8.4,
+      "imagem": "https://image.tmdb.org/t/p/w500/9fgh3Ns1iRzlQNYuJyK0ARQZU7w.jpg",
+      "sinopse": "Uma família se muda para um hotel isolado durante o inverno, onde a presença sobrenatural influencia o pai à violência.",
+      "duracao": 146,
+      "diretor": "Stanley Kubrick",
+      "elenco": [
+        "Jack Nicholson",
+        "Shelley Duvall",
+        "Danny Lloyd",
+        "Scatman Crothers",
+        "Barry Nelson"
+      ]
+    },
+    {
+      "id": 21,
+      "nome": "A Origem",
+      "ano": 2010,
+      "categorias": [
+        "Ficção Científica",
+        "Ação",
+        "Suspense"
+      ],
+      "rating": 8.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "sinopse": "Um ladrão especializado em roubar segredos através dos sonhos recebe a missão inversa de plantar uma ideia na mente de um alvo.",
+      "duracao": 148,
+      "diretor": "Christopher Nolan",
+      "elenco": [
+        "Leonardo DiCaprio",
+        "Joseph Gordon-Levitt",
+        "Ellen Page",
+        "Tom Hardy",
+        "Ken Watanabe"
+      ]
+    },
+    {
+      "id": 22,
+      "nome": "Vingadores: Ultimato",
+      "ano": 2019,
+      "categorias": [
+        "Ação",
+        "Aventura",
+        "Ficção Científica"
+      ],
+      "rating": 8.4,
+      "imagem": "https://image.tmdb.org/t/p/w500/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg",
+      "sinopse": "Os Vingadores restantes devem descobrir uma maneira de trazer de volta seus aliados para uma batalha final contra Thanos.",
+      "duracao": 181,
+      "diretor": "Anthony e Joe Russo",
+      "elenco": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Scarlett Johansson"
+      ]
+    },
+    {
+      "id": 23,
+      "nome": "Star Wars: Episódio V - O Império Contra-Ataca",
+      "ano": 1980,
+      "categorias": [
+        "Ficção Científica",
+        "Aventura",
+        "Ação"
+      ],
+      "rating": 8.7,
+      "imagem": "https://image.tmdb.org/t/p/w500/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
+      "sinopse": "Após a destruição da Estrela da Morte, os rebeldes fogem da Base Eco, enquanto Luke Skywalker começa seu treinamento Jedi com Yoda.",
+      "duracao": 124,
+      "diretor": "Irvin Kershner",
+      "elenco": [
+        "Mark Hamill",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Billy Dee Williams",
+        "Alec Guinness"
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "Jurassic Park: O Parque dos Dinossauros",
+      "ano": 1993,
+      "categorias": [
+        "Aventura",
+        "Ficção Científica",
+        "Ação"
+      ],
+      "rating": 8.2,
+      "imagem": "https://image.tmdb.org/t/p/w500/oU7Oq2kFAAlGqbU4VoAE36g4hoI.jpg",
+      "sinopse": "Um parque temático sofre um grande descontrole quando seus dinossauros geneticamente clonados escapam de seu recinto.",
+      "duracao": 127,
+      "diretor": "Steven Spielberg",
+      "elenco": [
+        "Sam Neill",
+        "Laura Dern",
+        "Jeff Goldblum",
+        "Richard Attenborough",
+        "Bob Peck"
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "Os Caça-Fantasmas",
+      "ano": 1984,
+      "categorias": [
+        "Comédia",
+        "Fantasia",
+        "Ação"
+      ],
+      "rating": 7.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/3k5GKC7b6FRfQ4XhdTsSGtW48c1.jpg",
+      "sinopse": "Três ex-professores de parapsicologia começam um negócio de remoção de fantasmas na cidade de Nova York.",
+      "duracao": 107,
+      "diretor": "Ivan Reitman",
+      "elenco": [
+        "Bill Murray",
+        "Dan Aykroyd",
+        "Sigourney Weaver",
+        "Harold Ramis",
+        "Rick Moranis"
+      ]
+    },
+    {
+      "id": 26,
+      "nome": "Coringa",
+      "ano": 2019,
+      "categorias": [
+        "Drama",
+        "Crime",
+        "Suspense"
+      ],
+      "rating": 8.4,
+      "imagem": "https://image.tmdb.org/t/p/w500/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg",
+      "sinopse": "Um comediante stand-up fracassado é levado à loucura e se envolve em uma vida de crime e caos em Gotham City.",
+      "duracao": 122,
+      "diretor": "Todd Phillips",
+      "elenco": [
+        "Joaquin Phoenix",
+        "Robert De Niro",
+        "Zazie Beetz",
+        "Frances Conroy",
+        "Brett Cullen"
+      ]
+    },
+    {
+      "id": 27,
+      "nome": "Toy Story",
+      "ano": 1995,
+      "categorias": [
+        "Animação",
+        "Comédia",
+        "Aventura"
+      ],
+      "rating": 8.3,
+      "imagem": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+      "sinopse": "Um brinquedo cowboy se sente profundamente ameaçado e ciumento quando um novo boneco espacial chega e substitui seu dono favorito.",
+      "duracao": 81,
+      "diretor": "John Lasseter",
+      "elenco": [
+        "Tom Hanks (voz)",
+        "Tim Allen (voz)",
+        "Don Rickles (voz)",
+        "Jim Varney (voz)",
+        "Wallace Shawn (voz)"
+      ]
+    },
+    {
+      "id": 28,
+      "nome": "O Rei Leão",
+      "ano": 1994,
+      "categorias": [
+        "Animação",
+        "Drama",
+        "Aventura"
+      ],
+      "rating": 8.5,
+      "imagem": "https://image.tmdb.org/t/p/w500/bKPtXn9n4M4s8vvZrbw40mYsefB.jpg",
+      "sinopse": "Um futuro leão rei foge ao exílio após o assassinato de seu pai, apenas para aprender o verdadeiro significado de responsabilidade e bravura.",
+      "duracao": 88,
+      "diretor": "Roger Allers e Rob Minkoff",
+      "elenco": [
+        "Matthew Broderick (voz)",
+        "Jeremy Irons (voz)",
+        "James Earl Jones (voz)",
+        "Whoopi Goldberg (voz)",
+        "Nathan Lane (voz)"
+      ]
+    },
+    {
+      "id": 29,
+      "nome": "De Volta para o Futuro",
+      "ano": 1985,
+      "categorias": [
+        "Ficção Científica",
+        "Comédia",
+        "Aventura"
+      ],
+      "rating": 8.5,
+      "imagem": "https://image.tmdb.org/t/p/w500/7lyBcpYB0Qt8gYhXYaEZUNlNQAv.jpg",
+      "sinopse": "Marty McFly, um adolescente de 17 anos, é acidentalmente enviado trinta anos no passado em uma máquina do tempo.",
+      "duracao": 116,
+      "diretor": "Robert Zemeckis",
+      "elenco": [
+        "Michael J. Fox",
+        "Christopher Lloyd",
+        "Lea Thompson",
+        "Crispin Glover",
+        "Thomas F. Wilson"
+      ]
+    },
+    {
+      "id": 30,
+      "nome": "O Exterminador do Futuro 2: O Julgamento Final",
+      "ano": 1991,
+      "categorias": [
+        "Ficção Científica",
+        "Ação"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/5M0j0B18abtBI5gi2RhfjjurTqb.jpg",
+      "sinopse": "Um ciborgue idêntico ao que tentou matar Sarah Connor é enviado de volta no tempo para proteger o jovem John Connor.",
+      "duracao": 137,
+      "diretor": "James Cameron",
+      "elenco": [
+        "Arnold Schwarzenegger",
+        "Linda Hamilton",
+        "Edward Furlong",
+        "Robert Patrick",
+        "Joe Morton"
+      ]
+    },
+    {
+      "id": 31,
+      "nome": "Os Sete Samurais",
+      "ano": 1954,
+      "categorias": [
+        "Ação",
+        "Drama"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg",
+      "sinopse": "Um pobre vilarejo sob ataque de bandidos recruta sete samurais desempregados para ajudá-los a se defender.",
+      "duracao": 207,
+      "diretor": "Akira Kurosawa",
+      "elenco": [
+        "Toshiro Mifune",
+        "Takashi Shimura",
+        "Keiko Tsushima",
+        "Yoshio Inaba",
+        "Seiji Miyaguchi"
+      ]
+    },
+    {
+      "id": 32,
+      "nome": "E o Vento Levou",
+      "ano": 1939,
+      "categorias": [
+        "Drama",
+        "Romance",
+        "Histórico"
+      ],
+      "rating": 8.2,
+      "imagem": "https://image.tmdb.org/t/p/w500/xRyW60TXvX7Q2HSbpz8nZxKaTkL.jpg",
+      "sinopse": "A manipulação filha de um proprietário de uma plantação de algodão da Geórgia se apaixona por um aventureiro na véspera da Guerra Civil Americana.",
+      "duracao": 238,
+      "diretor": "Victor Fleming",
+      "elenco": [
+        "Clark Gable",
+        "Vivien Leigh",
+        "Leslie Howard",
+        "Olivia de Havilland",
+        "Hattie McDaniel"
+      ]
+    },
+    {
+      "id": 33,
+      "nome": "Laranja Mecânica",
+      "ano": 1971,
+      "categorias": [
+        "Ficção Científica",
+        "Drama",
+        "Crime"
+      ],
+      "rating": 8.3,
+      "imagem": "https://image.tmdb.org/t/p/w500/4sHeTAp45W1UU6uH4kTu6yWDkBH.jpg",
+      "sinopse": "Na futura Grã-Bretanha, um delinquente carismático é preso e voluntariamente se submete a uma técnica psicológica para controlar a violência.",
+      "duracao": 136,
+      "diretor": "Stanley Kubrick",
+      "elenco": [
+        "Malcolm McDowell",
+        "Patrick Magee",
+        "Michael Bates",
+        "Warren Clarke",
+        "Adrienne Corri"
+      ]
+    },
+    {
+      "id": 34,
+      "nome": "Amnésia",
+      "ano": 2000,
+      "categorias": [
+        "Suspense",
+        "Mistério"
+      ],
+      "rating": 8.4,
+      "imagem": "https://image.tmdb.org/t/p/w500/yuSpRhrTIJa5JN8oESrfD2bNKF.jpg",
+      "sinopse": "Um homem com perda de memória de curto prazo tenta rastrear o assassino de sua esposa.",
+      "duracao": 113,
+      "diretor": "Christopher Nolan",
+      "elenco": [
+        "Guy Pearce",
+        "Carrie-Anne Moss",
+        "Joe Pantoliano",
+        "Mark Boone Junior",
+        "Russ Fega"
+      ]
+    },
+    {
+      "id": 35,
+      "nome": "O Resgate do Soldado Ryan",
+      "ano": 1998,
+      "categorias": [
+        "Drama",
+        "Guerra",
+        "Ação"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg",
+      "sinopse": "Após o desembarque na Normandia, um grupo de soldados americanos vai atrás das linhas inimigas para resgatar um paraquedista.",
+      "duracao": 169,
+      "diretor": "Steven Spielberg",
+      "elenco": [
+        "Tom Hanks",
+        "Matt Damon",
+        "Tom Sizemore",
+        "Edward Burns",
+        "Barry Pepper"
+      ]
+    },
+    {
+      "id": 36,
+      "nome": "Quem Quer Ser um Milionário?",
+      "ano": 2008,
+      "categorias": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 8,
+      "imagem": "https://image.tmdb.org/t/p/w500/3EYj0LJL5vT5R6qKANJlIyD5bro.jpg",
+      "sinopse": "Um adolescente das favelas de Mumbai está a um passo de ganhar 20 milhões de rúpias em um programa de perguntas e respostas.",
+      "duracao": 120,
+      "diretor": "Danny Boyle e Loveleen Tandan",
+      "elenco": [
+        "Dev Patel",
+        "Freida Pinto",
+        "Anil Kapoor",
+        "Saurabh Shukla",
+        "Irrfan Khan"
+      ]
+    },
+    {
+      "id": 37,
+      "nome": "A Forma da Água",
+      "ano": 2017,
+      "categorias": [
+        "Drama",
+        "Fantasia",
+        "Romance"
+      ],
+      "rating": 7.3,
+      "imagem": "https://image.tmdb.org/t/p/w500/k4FwHlMhuRRjBneAe1c1R3FCZEX.jpg",
+      "sinopse": "Em um laboratório secreto nos anos 1960, uma faxineira muda desenvolve um relacionamento único com uma criatura anfíbia aprisionada.",
+      "duracao": 123,
+      "diretor": "Guillermo del Toro",
+      "elenco": [
+        "Sally Hawkins",
+        "Doug Jones",
+        "Michael Shannon",
+        "Richard Jenkins",
+        "Octavia Spencer"
+      ]
+    },
+    {
+      "id": 38,
+      "nome": "Se7en: Os Sete Crimes Capitais",
+      "ano": 1995,
+      "categorias": [
+        "Crime",
+        "Drama",
+        "Mistério"
+      ],
+      "rating": 8.6,
+      "imagem": "https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+      "sinopse": "Dois detetives, um novato e um veterano, caçam um serial killer que usa os sete pecados capitais como motivos.",
+      "duracao": 127,
+      "diretor": "David Fincher",
+      "elenco": [
+        "Brad Pitt",
+        "Morgan Freeman",
+        "Kevin Spacey",
+        "Gwyneth Paltrow",
+        "R. Lee Ermey"
+      ]
+    },
+    {
+      "id": 39,
+      "nome": "Os Oito Odiados",
+      "ano": 2015,
+      "categorias": [
+        "Drama",
+        "Suspense",
+        "Crime"
+      ],
+      "rating": 7.8,
+      "imagem": "https://image.tmdb.org/t/p/w500/fqe8JxDNO8B8QfOGdL1t5g5xQqh.jpg",
+      "sinopse": "No rescaldo da Guerra Civil Americana, um caçador de recompensas e seu prisioneiro encontram refúgio em uma pousada.",
+      "duracao": 187,
+      "diretor": "Quentin Tarantino",
+      "elenco": [
+        "Samuel L. Jackson",
+        "Kurt Russell",
+        "Jennifer Jason Leigh",
+        "Walton Goggins",
+        "Tim Roth"
+      ]
+    },
+    {
+      "id": 40,
+      "nome": "O Labirinto do Fauno",
+      "ano": 2006,
+      "categorias": [
+        "Fantasia",
+        "Drama",
+        "Guerra"
+      ],
+      "rating": 8.2,
+      "imagem": "https://image.tmdb.org/t/p/w500/n2KlQ6Kz9QrZQo3RHZqR6cJHj1m.jpg",
+      "sinopse": "Na Espanha franquista de 1944, a garota criativa Ofelia enfrenta um mundo de terror quando conhece o labirinto de um fauno.",
+      "duracao": 118,
+      "diretor": "Guillermo del Toro",
+      "elenco": [
+        "Ivana Baquero",
+        "Sergi López",
+        "Maribel Verdú",
+        "Doug Jones",
+        "Ariadna Gil"
+      ]
+    },
+    {
+      "id": 41,
+      "nome": "O Grande Hotel Budapeste",
+      "ano": 2014,
+      "categorias": [
+        "Comédia",
+        "Drama",
+        "Aventura"
+      ],
+      "rating": 8.1,
+      "imagem": "https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
+      "sinopse": "Um escritor encontra o dono de um hotel decadente, que conta a história de seus primeiros anos como porteiro.",
+      "duracao": 99,
+      "diretor": "Wes Anderson",
+      "elenco": [
+        "Ralph Fiennes",
+        "F. Murray Abraham",
+        "Mathieu Amalric",
+        "Adrien Brody",
+        "Willem Dafoe"
+      ]
+    },
+    {
+      "id": 42,
+      "nome": "Garota Exemplar",
+      "ano": 2014,
+      "categorias": [
+        "Drama",
+        "Suspense",
+        "Mistério"
+      ],
+      "rating": 8.1,
+      "imagem": "https://image.tmdb.org/t/p/w500/vXZTlLbgzVpJZZVQaMq8QjBB6UE.jpg",
+      "sinopse": "Com o desaparecimento de sua esposa tendo se tornado o centro de uma cobertura da mídia, um man vê o foco voltar-se para si quando passa a ser o principal suspeito.",
+      "duracao": 149,
+      "diretor": "David Fincher",
+      "elenco": [
+        "Ben Affleck",
+        "Rosamund Pike",
+        "Neil Patrick Harris",
+        "Tyler Perry",
+        "Carrie Coon"
+      ]
+    },
+    {
+      "id": 43,
+      "nome": "O Lobo de Wall Street",
+      "ano": 2013,
+      "categorias": [
+        "Drama",
+        "Comédia",
+        "Crime"
+      ],
+      "rating": 8.2,
+      "imagem": "https://image.tmdb.org/t/p/w500/34m2tygAYBGqA9MXKhRDtzYd4MR.jpg",
+      "sinopse": "Baseado na história real de Jordan Belfort, desde sua ascensão até sua queda envolvendo corrupção, fraude e o governo federal.",
+      "duracao": 180,
+      "diretor": "Martin Scorsese",
+      "elenco": [
+        "Leonardo DiCaprio",
+        "Jonah Hill",
+        "Margot Robbie",
+        "Matthew McConaughey",
+        "Kyle Chandler"
+      ]
+    },
+    {
+      "id": 44,
+      "nome": "Brilho Eterno de uma Mente sem Lembranças",
+      "ano": 2004,
+      "categorias": [
+        "Drama",
+        "Romance",
+        "Ficção Científica"
+      ],
+      "rating": 8.3,
+      "imagem": "https://image.tmdb.org/t/p/w500/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+      "sinopse": "Quando seu relacionamento se desfaz, um casal passa por um procedimento médico para ter memórias um do outro apagadas.",
+      "duracao": 108,
+      "diretor": "Michel Gondry",
+      "elenco": [
+        "Jim Carrey",
+        "Kate Winslet",
+        "Kirsten Dunst",
+        "Mark Ruffalo",
+        "Elijah Wood"
+      ]
+    },
+    {
+      "id": 45,
+      "nome": "História de um Casamento",
+      "ano": 2019,
+      "categorias": [
+        "Drama",
+        "Romance"
+      ],
+      "rating": 7.9,
+      "imagem": "https://image.tmdb.org/t/p/w500/3mb5pyKfZqRzGJqP8Xh47PDgeRz.jpg",
+      "sinopse": "Noah Baumbach's incisive and compassionate look at a marriage breaking up and a family staying together.",
+      "duracao": 137,
+      "diretor": "Noah Baumbach",
+      "elenco": [
+        "Adam Driver",
+        "Scarlett Johansson",
+        "Laura Dern",
+        "Alan Alda",
+        "Ray Liotta"
+      ]
+    },
+    {
+      "id": 46,
+      "nome": "O Poço",
+      "ano": 2019,
+      "categorias": [
+        "Ficção Científica",
+        "Suspense",
+        "Drama"
+      ],
+      "rating": 7.4,
+      "imagem": "https://image.tmdb.org/t/p/w500/m8Tw1CI8pKvK4mQqWQ2bP4eEScE.jpg",
+      "sinopse": "Em uma prisão vertical, os detentos de nível superior recebem comida farta enquanto os de baixo sobrevivem com migalhas.",
+      "duracao": 94,
+      "diretor": "Galder Gaztelu-Urrutia",
+      "elenco": [
+        "Ivan Massagué",
+        "Antonia San Juan",
+        "Zorion Eguileor",
+        "Emilio Buale",
+        "Alexandra Masangkay"
+      ]
+    },
+    {
+      "id": 47,
+      "nome": "A Chegada",
+      "ano": 2016,
+      "categorias": [
+        "Ficção Científica",
+        "Drama",
+        "Suspense"
+      ],
+      "rating": 7.9,
+      "imagem": "https://image.tmdb.org/t/p/w500/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+      "sinopse": "Uma linguista é recrutada pelo exército americano para descobrir como se comunicar com alienígenas que chegaram à Terra.",
+      "duracao": 116,
+      "diretor": "Denis Villeneuve",
+      "elenco": [
+        "Amy Adams",
+        "Jeremy Renner",
+        "Forest Whitaker",
+        "Michael Stuhlbarg",
+        "Mark O'Brien"
+      ]
+    },
+    {
+      "id": 48,
+      "nome": "Corra!",
+      "ano": 2017,
+      "categorias": [
+        "Terror",
+        "Suspense",
+        "Mistério"
+      ],
+      "rating": 7.7,
+      "imagem": "https://image.tmdb.org/t/p/w500/1QpO9wo7JWZAZNsVu5n4wq6xwT8.jpg",
+      "sinopse": "Um jovem afro-americano visita a família de sua namorada branca, apenas para descobrir um segredo terrível.",
+      "duracao": 104,
+      "diretor": "Jordan Peele",
+      "elenco": [
+        "Daniel Kaluuya",
+        "Allison Williams",
+        "Bradley Whitford",
+        "Catherine Keener",
+        "Lil Rel Howery"
+      ]
+    },
+    {
+      "id": 49,
+      "nome": "Duna",
+      "ano": 2021,
+      "categorias": [
+        "Ficção Científica",
+        "Drama",
+        "Aventura"
+      ],
+      "rating": 8,
+      "imagem": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "sinopse": "Paul Atreides, um jovem brilhante e talentoso, viaja para o planeta mais perigoso do universo para garantir o futuro de seu povo.",
+      "duracao": 155,
+      "diretor": "Denis Villeneuve",
+      "elenco": [
+        "Timothée Chalamet",
+        "Rebecca Ferguson",
+        "Oscar Isaac",
+        "Josh Brolin",
+        "Zendaya"
+      ]
     }
   ],
   "contacts": []

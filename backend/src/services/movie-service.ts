@@ -37,31 +37,61 @@ export const getMoviesByIdService = async(id: number) =>{
     return response
 }
 
+// Adicione esta função helper para normalizar textos
+const normalizeText = (text: string): string => {
+    return text
+        .toLowerCase()
+        .normalize('NFD') // Decompõe acentos
+        .replace(/[\u0300-\u036f]/g, '') // Remove acentos
+        .trim();
+};
+
 export const searchMoviesService = async(filters: {
-        nome?: string;
-        categoria?: string;
-        ano?: string;
-    }) => {
-    const { nome, categoria, ano } = filters;
+    nome?: string;
+    categorias?: string[];
+    ano?: number;
+}) => {
+    const { nome, categorias, ano } = filters;
 
     let results = await findAllMovies();
 
-    if (nome) {
-        const lower = nome.toLowerCase();
-        results = results.filter(movie => movie.nome.toLowerCase().includes(lower)
-    );
-  }
+    // Filtro por nome
+    if (nome && nome.trim() !== '') {
+        const normalizedNome = normalizeText(nome);
+        results = results.filter(movie => 
+            normalizeText(movie.nome).includes(normalizedNome)
+        );
+    }
 
-    if (categoria) {
-        const lower = categoria.toLowerCase();
-        results = results.filter(movie => movie.categorias.some(c => c.toLowerCase() === lower)
-    );
-  }
+    // Filtro por categorias
+    if (categorias && categorias.length > 0) {
+        
+        const validCategorias = categorias
+            .map(c => c.trim())
+            .filter(c => c !== '');
+        
+        if (validCategorias.length > 0) {
+            const normalizedCategorias = validCategorias.map(c => normalizeText(c));
+            
+            results = results.filter(movie => {
+                const movieCatsNormalized = movie.categorias.map(c => normalizeText(c));
+                
+                // Verifica se o filme tem TODAS as categorias buscadas
+                const hasAll = normalizedCategorias.every(categoria => 
+                    movieCatsNormalized.includes(categoria)
+                );
+                
+                return hasAll;
+            });
+        }
+    }
 
-    if (ano) {
+    // Filtro por ano
+    if (ano !== undefined) {
         results = results.filter(movie => movie.ano === ano);
     }
 
+    
     return {
         statusCode: 200,
         body: results
