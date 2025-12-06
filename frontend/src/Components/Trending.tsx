@@ -1,49 +1,77 @@
+// src/components/Trending/Trending.tsx
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import { Card } from "./Card";
+import { movieService } from "../services/movieService";
+import type { Movie } from "../Types/Movie";
 import "./../styles/forgeflix.css";
 import imageCurve from "./../assets/images/curve.svg";
-import {Card} from "./Card"
-
-import image1 from "./../assets/images/card1.png";
-import image2 from "./../assets/images/card2.png";
-import image3 from "./../assets/images/card3.png";
-import image4 from "./../assets/images/card4.png";
 
 export default function Trending() {
+  const navigate = useNavigate();
+  const [movies, setMovies] = useState<Movie[]>([]);
+  const [loading, setLoading] = useState(true);
   const imageCurveUrl = imageCurve;
+
+  useEffect(() => {
+    loadTopRatedMovies();
+  }, []);
+
+  async function loadTopRatedMovies() {
+    try {
+      setLoading(true);
+      
+      // Busca todos os filmes
+      const allMovies = await movieService.getAll();
+      
+      // Filtra filmes com rating válido (> 0)
+      const ratedMovies = allMovies.filter(movie => 
+        movie.rating && movie.rating > 0
+      );
+      
+      // Ordena por rating (decrescente) e pega os 4 primeiros
+      const topMovies = ratedMovies
+        .sort((a, b) => (b.rating || 0) - (a.rating || 0))
+        .slice(0, 4);
+      
+      setMovies(topMovies);
+    } catch (error) {
+      console.error("Erro ao carregar filmes em alta:", error);
+      setMovies([]);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  const handleCardClick = (movieId: number) => {
+    navigate(`/movie/${movieId}`);
+  };
+
   return (
     <section className="trending">
       <h2>🔥 EM ALTA NA FORJA</h2>
 
-      <img src={imageCurveUrl} className="trending-curve" />
+      {/* A curva fica no fundo */}
+      <img src={imageCurveUrl} className="trending-curve" alt="Curva decorativa" />
 
-      <div className="cards-container">
-        <Card
-            rating="8.8"
-            image={image1}
-            title="HOMEM ARANHA"
-            year="2010 • AÇÃO / FICÇÃO CIENTÍFICA"
-        />
-
-        <Card
-            rating="8.6"
-            image={image2}
-            title="CORINGA"
-            year="2014 • FICÇÃO CIENTÍFICA / DRAMA"
-        />
-
-        <Card
-            rating="8.0"
-            image={image3}
-            title="TRANSFORMERS"
-            year="2017 • FICÇÃO CIENTÍFICA / AÇÃO"
-        />
-
-        <Card
-            rating="7.8"
-            image={image4}
-            title="PÂNICO V"
-            year="2017 • TERROR / SUSPENSE"
-        />
-
+      {/* Container dos cards com z-index acima da curva */}
+      <div className="movie-cards">
+        <div className="cards-container">
+          {loading ? (
+            <div className="loading">Carregando filmes em alta...</div>
+          ) : (
+            movies.map((movie) => (
+              <Card
+                key={movie.id}
+                rating={movie.rating?.toString() || "N/A"}
+                image={movie.imagem}
+                title={movie.nome}
+                year={`${movie.ano} • ${movie.categorias?.join(" / ")}`}
+                onClick={() => handleCardClick(movie.id)}
+              />
+            ))
+          )}
+        </div>
       </div>
     </section>
   );
