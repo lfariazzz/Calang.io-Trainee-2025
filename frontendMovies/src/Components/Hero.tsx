@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./../styles/forgeflix.css";
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
         <p>Descubra milhares de filmes em uma plataforma feita para cinéfilos</p>
 
         <div className="hero-buttons">
-          <button className="primary">EXPLORAR CATÁLOGO</button>
+          <Link to="/catalogo" className="primary">EXPLORAR CATÁLOGO</Link>
           <button className="secondary">COMO FUNCIONA</button>
         </div>
       </div>

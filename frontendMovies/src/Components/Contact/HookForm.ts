@@ -70,11 +70,10 @@ export function useContactForm() {
         throw new Error('Erro ao enviar mensagem');
       }
       
-      // Limpa o formulário
+      // Limpar o formulário
       setFormData({ nome: '', email: '', mensagem: '' });
       setSuccess(true);
       
-      // Reseta o sucesso após 5 segundos
       setTimeout(() => setSuccess(false), 5000);
       
     } catch (err) {

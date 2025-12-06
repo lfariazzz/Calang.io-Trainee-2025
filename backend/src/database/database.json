@@ -1062,16 +1062,5 @@
       ]
     }
   ],
-  "contacts": [
-    {
-      "nome": "fffffffffffff",
-      "email": "vitorr@gmail.com",
-      "mensagem": "hhhhhhhhhvvvv"
-    },
-    {
-      "nome": "Vitor",
-      "email": "vitor@gmail.com",
-      "mensagem": "Olá, adiciona mais filmes de romance."
-    }
-  ]
+  "contacts": []
 }

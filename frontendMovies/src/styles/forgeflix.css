@@ -163,6 +163,7 @@ body {
   cursor: pointer;
   font-weight: 600;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .primary:hover {
@@ -532,7 +533,7 @@ body {
 
  
 
-/* FOOTER REDESIGN */
+/* FOOTER */
 .footer {
     background: #0a0a0a;
     padding: 60px 40px 30px;
@@ -548,7 +549,6 @@ body {
     margin: 0 auto 40px;
 }
 
-/* BRAND */
 .footer-brand {
     display: flex;
     flex-direction: column;

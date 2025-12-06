@@ -12,17 +12,16 @@ main {
     position: relative;
 }
 
-/* SIDEBAR FIXA */
+
 #filter-section {
     position: fixed;
-    top: 85px;                     /* abaixo da navbar */
-    left: 40px;                    /* mantém o mesmo recuo lateral */
-    width: 280px;                  /* mesma ideia de antes (40% ficava desproporcional fixa) */
-    height: calc(100vh - 80px);    /* altura sem encostar no topo/baixo */
+    top: 85px;                    
+    left: 40px;                   
+    width: 280px;                 
+    height: calc(100vh - 80px);  
     overflow-y: auto;
 }
 
-/* Conteúdo do filtro */
 .filter-container {
     background: #141414;
     padding: 25px;
@@ -94,15 +93,12 @@ main {
     margin-bottom: 25px;
 }
 
-/* GRID DOS CARDS */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 25px;
 }
 
-
-/* Botão de filtrar */
 .filter-button {
   background-color: #ff7a2f;
   color: white;

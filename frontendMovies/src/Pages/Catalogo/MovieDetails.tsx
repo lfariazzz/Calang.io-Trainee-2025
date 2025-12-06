@@ -24,7 +24,7 @@ export function MovieDetail() {
       setMovie(data);
     } catch (error) {
       console.error("Erro ao carregar detalhes do filme:", error);
-      navigate("/catalogo"); // Redireciona se não encontrar
+      navigate("/catalogo"); 
     } finally {
       setLoading(false);
     }
@@ -40,12 +40,11 @@ export function MovieDetail() {
 
   const handleWatchNow = () => {
     console.log("Assistir agora:", movie.id);
-    // Lógica para assistir o filme
   };
 
   const handleAddToCollection = () => {
     console.log("Adicionar à coleção:", movie.id);
-    // Lógica para adicionar à coleção
+
   };
 
   return (
@@ -116,7 +115,6 @@ export function MovieDetail() {
 
           <div className="movie-rating">
             <div className="stars">
-              {/* Renderizar estrelas baseadas na avaliação */}
               {Array.from({ length: 5 }).map((_, index) => (
                 <i 
                   key={index} 
