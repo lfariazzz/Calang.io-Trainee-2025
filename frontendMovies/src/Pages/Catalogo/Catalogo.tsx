@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { FilterSection } from "../../Components/FilterSection/FilterSection";
 import { Card } from "../../Components/Card";
 import { movieService } from "../../services/movieService";
+import { useNavigate } from "react-router";
 import type { Movie } from "../../Types/Movie";
 import "../../styles/catalogo.css";
 
 export function Catalogo() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     loadMovies();
@@ -44,6 +46,10 @@ export function Catalogo() {
     loadMovies(filters);
   };
 
+  const handleCardClick = (movieId: number) => {
+    navigate(`/movie/${movieId}`);
+  };
+
   return (
     <main>
       <FilterSection onFilter={handleFilter} />
@@ -64,6 +70,7 @@ export function Catalogo() {
                 image={movie.imagem}
                 title={movie.nome}
                 year={`${movie.ano} • ${movie.categorias?.join(" / ")}`}
+                onClick={() => handleCardClick(movie.id)}
               />
             ))}
           </div>

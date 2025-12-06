@@ -1,6 +1,6 @@
 // Types/Movie.ts
 export interface Movie {
-  id: number | string;
+  id: number;
   nome: string;
   ano: number;
   categorias?: string[];
@@ -8,4 +8,6 @@ export interface Movie {
   imagem: string;
   sinopse?: string;
   duracao?: number;
+  diretor?: string;
+  elenco?: string; 
 }

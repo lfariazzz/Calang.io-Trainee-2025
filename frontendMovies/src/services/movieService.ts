@@ -37,6 +37,8 @@ export const movieService = {
     return response.data;
   },
 
-  // Se você tiver outros métodos, mantém-os aqui
-  // getById, create, update, delete, etc.
+  getById: async (id: number): Promise<Movie> => {
+    const response = await axios.get(`${API_URL}/${id}`);
+    return response.data;
+  },
 };
