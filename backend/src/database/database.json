@@ -1,27 +1,6 @@
 {
   "movies": [
     {
-      "id": 1,
-      "nome": "O Poderoso Chefão",
-      "ano": 1972,
-      "categorias": [
-        "Drama",
-        "Crime"
-      ],
-      "rating": 9.2,
-      "imagem": "https://image.tmdb.org/t/p/w500/3Tf8vXykYHzHrTt4m7Od3ciHmIq.jpg",
-      "sinopse": "Uma família mafiosa luta para estabelecer sua supremacia nos Estados Unidos depois da Segunda Guerra Mundial.",
-      "duracao": 175,
-      "diretor": "Francis Ford Coppola",
-      "elenco": [
-        "Marlon Brando",
-        "Al Pacino",
-        "James Caan",
-        "Robert Duvall",
-        "Diane Keaton"
-      ]
-    },
-    {
       "id": 2,
       "nome": "Um Sonho de Liberdade",
       "ano": 1994,
@@ -39,28 +18,6 @@
         "Bob Gunton",
         "William Sadler",
         "Clancy Brown"
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "O Cavaleiro das Trevas",
-      "ano": 2008,
-      "categorias": [
-        "Ação",
-        "Drama",
-        "Crime"
-      ],
-      "rating": 9,
-      "imagem": "https://image.tmdb.org/t/p/w500/iGp9v4kZKyDwm7F4E0q4jRqYc6E.jpg",
-      "sinopse": "Batman trava uma guerra contra o crime em Gotham City com a ajuda do tenente James Gordon e do promotor Harvey Dent.",
-      "duracao": 152,
-      "diretor": "Christopher Nolan",
-      "elenco": [
-        "Christian Bale",
-        "Heath Ledger",
-        "Aaron Eckhart",
-        "Michael Caine",
-        "Gary Oldman"
       ]
     },
     {
@@ -408,27 +365,6 @@
       ]
     },
     {
-      "id": 20,
-      "nome": "O Iluminado",
-      "ano": 1980,
-      "categorias": [
-        "Terror",
-        "Drama"
-      ],
-      "rating": 8.4,
-      "imagem": "https://image.tmdb.org/t/p/w500/9fgh3Ns1iRzlQNYuJyK0ARQZU7w.jpg",
-      "sinopse": "Uma família se muda para um hotel isolado durante o inverno, onde a presença sobrenatural influencia o pai à violência.",
-      "duracao": 146,
-      "diretor": "Stanley Kubrick",
-      "elenco": [
-        "Jack Nicholson",
-        "Shelley Duvall",
-        "Danny Lloyd",
-        "Scatman Crothers",
-        "Barry Nelson"
-      ]
-    },
-    {
       "id": 21,
       "nome": "A Origem",
       "ano": 2010,
@@ -517,28 +453,6 @@
       ]
     },
     {
-      "id": 25,
-      "nome": "Os Caça-Fantasmas",
-      "ano": 1984,
-      "categorias": [
-        "Comédia",
-        "Fantasia",
-        "Ação"
-      ],
-      "rating": 7.8,
-      "imagem": "https://image.tmdb.org/t/p/w500/3k5GKC7b6FRfQ4XhdTsSGtW48c1.jpg",
-      "sinopse": "Três ex-professores de parapsicologia começam um negócio de remoção de fantasmas na cidade de Nova York.",
-      "duracao": 107,
-      "diretor": "Ivan Reitman",
-      "elenco": [
-        "Bill Murray",
-        "Dan Aykroyd",
-        "Sigourney Weaver",
-        "Harold Ramis",
-        "Rick Moranis"
-      ]
-    },
-    {
       "id": 26,
       "nome": "Coringa",
       "ano": 2019,
@@ -592,7 +506,7 @@
         "Aventura"
       ],
       "rating": 8.5,
-      "imagem": "https://image.tmdb.org/t/p/w500/bKPtXn9n4M4s8vvZrbw40mYsefB.jpg",
+      "imagem": "https://imgs.search.brave.com/ouGNylDShK8ynQTU23FKoz4TQG3rzXS50ZgCnn0t1wk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2Rp/c25leS9pbWFnZXMv/Yy9jNy9Qb3N0ZXIt/cmVpLWxlYW8tZnVs/bC5qcGVnL3Jldmlz/aW9uL2xhdGVzdC9z/Y2FsZS10by13aWR0/aC1kb3duLzI3MD9j/Yj0yMDE2MDkyNTIw/NDcyOCZwYXRoLXBy/ZWZpeD1wdC1icg",
       "sinopse": "Um futuro leão rei foge ao exílio após o assassinato de seu pai, apenas para aprender o verdadeiro significado de responsabilidade e bravura.",
       "duracao": 88,
       "diretor": "Roger Allers e Rob Minkoff",
@@ -700,7 +614,7 @@
         "Crime"
       ],
       "rating": 8.3,
-      "imagem": "https://image.tmdb.org/t/p/w500/4sHeTAp45W1UU6uH4kTu6yWDkBH.jpg",
+      "imagem": "https://imgs.search.brave.com/_qKT1yoVI1KcnsqX91utdETmNiHo8K3KjTXOHhLfND0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50aGVtb3ZpZWRi/Lm9yZy90L3AvdzMw/MF9hbmRfaDQ1MF9i/ZXN0djIvZThqSXdm/UDhqcjgxVVRGYmgy/cUpWakJoSVVMLmpw/Zw",
       "sinopse": "Na futura Grã-Bretanha, um delinquente carismático é preso e voluntariamente se submete a uma técnica psicológica para controlar a violência.",
       "duracao": 136,
       "diretor": "Stanley Kubrick",
@@ -721,7 +635,7 @@
         "Mistério"
       ],
       "rating": 8.4,
-      "imagem": "https://image.tmdb.org/t/p/w500/yuSpRhrTIJa5JN8oESrfD2bNKF.jpg",
+      "imagem": "https://imgs.search.brave.com/zlW1fO71lPJyhlWwlkmarpPMEqBt20T0zlpJOTsmpos/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mci53/ZWIuaW1nMy5hY3N0/YS5uZXQvY18zMDBf/MzAwL3BpY3R1cmVz/LzE1LzA0LzI3LzE2/LzI1LzAwNDE5MC5q/cGc",
       "sinopse": "Um homem com perda de memória de curto prazo tenta rastrear o assassino de sua esposa.",
       "duracao": 113,
       "diretor": "Christopher Nolan",
@@ -756,49 +670,6 @@
       ]
     },
     {
-      "id": 36,
-      "nome": "Quem Quer Ser um Milionário?",
-      "ano": 2008,
-      "categorias": [
-        "Drama",
-        "Romance"
-      ],
-      "rating": 8,
-      "imagem": "https://image.tmdb.org/t/p/w500/3EYj0LJL5vT5R6qKANJlIyD5bro.jpg",
-      "sinopse": "Um adolescente das favelas de Mumbai está a um passo de ganhar 20 milhões de rúpias em um programa de perguntas e respostas.",
-      "duracao": 120,
-      "diretor": "Danny Boyle e Loveleen Tandan",
-      "elenco": [
-        "Dev Patel",
-        "Freida Pinto",
-        "Anil Kapoor",
-        "Saurabh Shukla",
-        "Irrfan Khan"
-      ]
-    },
-    {
-      "id": 37,
-      "nome": "A Forma da Água",
-      "ano": 2017,
-      "categorias": [
-        "Drama",
-        "Fantasia",
-        "Romance"
-      ],
-      "rating": 7.3,
-      "imagem": "https://image.tmdb.org/t/p/w500/k4FwHlMhuRRjBneAe1c1R3FCZEX.jpg",
-      "sinopse": "Em um laboratório secreto nos anos 1960, uma faxineira muda desenvolve um relacionamento único com uma criatura anfíbia aprisionada.",
-      "duracao": 123,
-      "diretor": "Guillermo del Toro",
-      "elenco": [
-        "Sally Hawkins",
-        "Doug Jones",
-        "Michael Shannon",
-        "Richard Jenkins",
-        "Octavia Spencer"
-      ]
-    },
-    {
       "id": 38,
       "nome": "Se7en: Os Sete Crimes Capitais",
       "ano": 1995,
@@ -818,94 +689,6 @@
         "Kevin Spacey",
         "Gwyneth Paltrow",
         "R. Lee Ermey"
-      ]
-    },
-    {
-      "id": 39,
-      "nome": "Os Oito Odiados",
-      "ano": 2015,
-      "categorias": [
-        "Drama",
-        "Suspense",
-        "Crime"
-      ],
-      "rating": 7.8,
-      "imagem": "https://image.tmdb.org/t/p/w500/fqe8JxDNO8B8QfOGdL1t5g5xQqh.jpg",
-      "sinopse": "No rescaldo da Guerra Civil Americana, um caçador de recompensas e seu prisioneiro encontram refúgio em uma pousada.",
-      "duracao": 187,
-      "diretor": "Quentin Tarantino",
-      "elenco": [
-        "Samuel L. Jackson",
-        "Kurt Russell",
-        "Jennifer Jason Leigh",
-        "Walton Goggins",
-        "Tim Roth"
-      ]
-    },
-    {
-      "id": 40,
-      "nome": "O Labirinto do Fauno",
-      "ano": 2006,
-      "categorias": [
-        "Fantasia",
-        "Drama",
-        "Guerra"
-      ],
-      "rating": 8.2,
-      "imagem": "https://image.tmdb.org/t/p/w500/n2KlQ6Kz9QrZQo3RHZqR6cJHj1m.jpg",
-      "sinopse": "Na Espanha franquista de 1944, a garota criativa Ofelia enfrenta um mundo de terror quando conhece o labirinto de um fauno.",
-      "duracao": 118,
-      "diretor": "Guillermo del Toro",
-      "elenco": [
-        "Ivana Baquero",
-        "Sergi López",
-        "Maribel Verdú",
-        "Doug Jones",
-        "Ariadna Gil"
-      ]
-    },
-    {
-      "id": 41,
-      "nome": "O Grande Hotel Budapeste",
-      "ano": 2014,
-      "categorias": [
-        "Comédia",
-        "Drama",
-        "Aventura"
-      ],
-      "rating": 8.1,
-      "imagem": "https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
-      "sinopse": "Um escritor encontra o dono de um hotel decadente, que conta a história de seus primeiros anos como porteiro.",
-      "duracao": 99,
-      "diretor": "Wes Anderson",
-      "elenco": [
-        "Ralph Fiennes",
-        "F. Murray Abraham",
-        "Mathieu Amalric",
-        "Adrien Brody",
-        "Willem Dafoe"
-      ]
-    },
-    {
-      "id": 42,
-      "nome": "Garota Exemplar",
-      "ano": 2014,
-      "categorias": [
-        "Drama",
-        "Suspense",
-        "Mistério"
-      ],
-      "rating": 8.1,
-      "imagem": "https://image.tmdb.org/t/p/w500/vXZTlLbgzVpJZZVQaMq8QjBB6UE.jpg",
-      "sinopse": "Com o desaparecimento de sua esposa tendo se tornado o centro de uma cobertura da mídia, um man vê o foco voltar-se para si quando passa a ser o principal suspeito.",
-      "duracao": 149,
-      "diretor": "David Fincher",
-      "elenco": [
-        "Ben Affleck",
-        "Rosamund Pike",
-        "Neil Patrick Harris",
-        "Tyler Perry",
-        "Carrie Coon"
       ]
     },
     {
@@ -953,49 +736,6 @@
       ]
     },
     {
-      "id": 45,
-      "nome": "História de um Casamento",
-      "ano": 2019,
-      "categorias": [
-        "Drama",
-        "Romance"
-      ],
-      "rating": 7.9,
-      "imagem": "https://image.tmdb.org/t/p/w500/3mb5pyKfZqRzGJqP8Xh47PDgeRz.jpg",
-      "sinopse": "Noah Baumbach's incisive and compassionate look at a marriage breaking up and a family staying together.",
-      "duracao": 137,
-      "diretor": "Noah Baumbach",
-      "elenco": [
-        "Adam Driver",
-        "Scarlett Johansson",
-        "Laura Dern",
-        "Alan Alda",
-        "Ray Liotta"
-      ]
-    },
-    {
-      "id": 46,
-      "nome": "O Poço",
-      "ano": 2019,
-      "categorias": [
-        "Ficção Científica",
-        "Suspense",
-        "Drama"
-      ],
-      "rating": 7.4,
-      "imagem": "https://image.tmdb.org/t/p/w500/m8Tw1CI8pKvK4mQqWQ2bP4eEScE.jpg",
-      "sinopse": "Em uma prisão vertical, os detentos de nível superior recebem comida farta enquanto os de baixo sobrevivem com migalhas.",
-      "duracao": 94,
-      "diretor": "Galder Gaztelu-Urrutia",
-      "elenco": [
-        "Ivan Massagué",
-        "Antonia San Juan",
-        "Zorion Eguileor",
-        "Emilio Buale",
-        "Alexandra Masangkay"
-      ]
-    },
-    {
       "id": 47,
       "nome": "A Chegada",
       "ano": 2016,
@@ -1015,28 +755,6 @@
         "Forest Whitaker",
         "Michael Stuhlbarg",
         "Mark O'Brien"
-      ]
-    },
-    {
-      "id": 48,
-      "nome": "Corra!",
-      "ano": 2017,
-      "categorias": [
-        "Terror",
-        "Suspense",
-        "Mistério"
-      ],
-      "rating": 7.7,
-      "imagem": "https://image.tmdb.org/t/p/w500/1QpO9wo7JWZAZNsVu5n4wq6xwT8.jpg",
-      "sinopse": "Um jovem afro-americano visita a família de sua namorada branca, apenas para descobrir um segredo terrível.",
-      "duracao": 104,
-      "diretor": "Jordan Peele",
-      "elenco": [
-        "Daniel Kaluuya",
-        "Allison Williams",
-        "Bradley Whitford",
-        "Catherine Keener",
-        "Lil Rel Howery"
       ]
     },
     {
