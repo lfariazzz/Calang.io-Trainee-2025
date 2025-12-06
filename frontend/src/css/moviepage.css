@@ -1,0 +1,285 @@
+/* ============================================
+   PÁGINA DE DETALHES DO FILME
+   Mantém TODOS os estilos da homepage
+   Apenas adiciona/sobrescreve o necessário
+============================================ */
+
+/* SEÇÃO DO FILME (SUBSTITUI O HERO) */
+.movie-detail {
+    padding-top: 180px;
+    padding-bottom: 150px;
+    position: relative;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 1;
+}
+
+/* Container para poster + info lado a lado */
+.movie-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* CARD GRANDE DO FILME (ESQUERDA) */
+.movie-poster-card {
+    flex: 0 0 380px;
+    background: #1c1c1c;
+    border-radius: 24px;
+    padding: 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px 24px 0 0;
+}
+
+.movie-badge {
+    padding: 20px;
+    background: #0f0f0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-year {
+    color: #ff5c23;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.movie-genre {
+    color: #aaa;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* INFORMAÇÕES (DIREITA) */
+.movie-info {
+    flex: 1;
+    padding-top: 10px;
+}
+
+.movie-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    background: linear-gradient(to right, #fff, hsl(25, 100%, 85%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* BOTÕES DE AÇÃO */
+.movie-actions {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.watch-now {
+    background: #ff5c23;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.watch-now:hover {
+    background: #ff723a;
+    transform: translateY(-3px);
+}
+
+.add-to-collection {
+    background: transparent;
+    border: 2px solid #ff5c23;
+    padding: 18px 30px;
+    border-radius: 12px;
+    color: #ff5c23;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.add-to-collection:hover {
+    background: #ff5c2334;
+    transform: translateY(-3px);
+}
+
+/* SINOPSE */
+.movie-synopsis {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+/* METADADOS (Diretor, Elenco, Duração) */
+.movie-meta {
+    background: rgba(28, 28, 28, 0.7);
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 35px;
+    max-width: 700px;
+}
+
+.meta-item {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.meta-item:last-child {
+    margin-bottom: 0;
+}
+
+.meta-item strong {
+    color: #ff5c23;
+    min-width: 100px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.meta-item span {
+    color: #eee;
+    flex: 1;
+    line-height: 1.5;
+}
+
+/* AVALIAÇÃO */
+.movie-rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stars {
+    color: #ffd54f;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.rating-value {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.3rem;
+    background: rgba(255, 92, 35, 0.1);
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+/* SEÇÃO RECOMENDADOS (TRENDING COM TÍTULO ALTERADO) */
+.recommended {
+    margin-top: -80px;
+    padding: 80px 40px 160px;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    overflow: visible;
+    z-index: 2;
+}
+
+.recommended h2 {
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+}
+
+/* A curva fica no fundo, idêntica à homepage */
+.recommended .trending-curve {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+    filter: brightness(0) invert(1);
+    pointer-events: none;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* Garante que os cards fiquem acima da curva */
+.recommended .cards-container {
+    position: relative;
+    z-index: 3;
+}
+
+/* Responsividade básica */
+@media (max-width: 1024px) {
+    .movie-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .movie-poster-card {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .movie-info {
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    .movie-title {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    
+    .movie-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .watch-now,
+    .add-to-collection {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .movie-meta {
+        padding: 20px;
+    }
+    
+    .meta-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .meta-item strong {
+        min-width: auto;
+    }
+}
